@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for light and dark mode */
+/* Custom styles for light and dark mode */
+.light {
+	@apply bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400; /* Amanhecer Suave */
+}
+
+.dark {
+	@apply bg-gradient-to-r from-gray-700 via-gray-900 to-black; /* Noite Estrelada */
+}
