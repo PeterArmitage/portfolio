@@ -1,5 +1,5 @@
-import { FaKeyboard, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-
+import { FaKeyboard, FaGithub } from 'react-icons/fa';
+//FaExternalLinkAlt
 const Projects = () => {
 	return (
 		<div className='font-montserrat p-4 lg:pl-72 md:pl-16 sm:pl-8'>
