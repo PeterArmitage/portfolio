@@ -1,7 +1,8 @@
 import { FaTools } from 'react-icons/fa';
 import { DotLottiePlayer } from '@dotlottie/react-player';
-
+import { useTranslation } from 'react-i18next';
 const Skills = () => {
+	const { t } = useTranslation();
 	return (
 		<div className='font-montserrat p-4 lg:pl-72 md:pl-16 sm:pl-8'>
 			<div className='hover:bg-purple-300 dark:hover:bg-gray-700 transition-colors p-4 rounded'>
@@ -9,13 +10,16 @@ const Skills = () => {
 					<FaTools className='mr-2' /> My Skills
 				</h1>
 				<p className='text-lg'>
-					Here are some of the skills I have acquired:
+					{t('skillsIntro')}
 					<ul className='list-disc list-inside'>
 						<li>JavaScript</li>
 						<li>React</li>
 						<li>Node.js</li>
 						<li>SQL</li>
 						<li>Power BI</li>
+						<li>Prisma</li>
+						<li>Nextjs</li>
+						<li>{t('variousOtherTools')}</li>
 					</ul>
 				</p>
 				<div className='flex justify-center mt-8'>
