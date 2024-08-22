@@ -2,7 +2,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 
 interface ThemeSwitchProps {
 	toggleTheme: () => void;
-	theme: 'light' | 'dark';
+	theme: 'dark' | 'light';
 }
 
 const ThemeSwitch: React.FC<ThemeSwitchProps> = ({ toggleTheme, theme }) => {
