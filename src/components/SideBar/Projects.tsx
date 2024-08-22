@@ -9,7 +9,7 @@ const Projects = () => {
 				</h1>
 				<div className='space-y-8'>
 					<div className='bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md'>
-						<h2 className='text-2xl font-bold mb-4'>Fitness Dashboard</h2>
+						<h2 className='text-2xl font-bold mb-4'>Fit Forge</h2>
 						<div className='mb-4'>
 							<img
 								src='/path-to-your-screenshot.png'
@@ -25,7 +25,7 @@ const Projects = () => {
 						</p>
 						<div className='flex space-x-4'>
 							<a
-								href='https://github.com/your-username/fitness-dashboard'
+								href='https://github.com/PeterArmitage/FitnessApp'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='flex items-center text-blue-500 hover:underline'
