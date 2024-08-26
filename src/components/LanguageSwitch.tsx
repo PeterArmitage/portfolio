@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import ReactCountryFlag from 'react-country-flag';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
 	DropdownMenu,
 	DropdownMenuTrigger,
@@ -11,6 +11,20 @@ import {
 const LanguageSwitch = () => {
 	const { i18n } = useTranslation();
 	const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const checkIfMobile = () => {
+			setIsMobile(window.innerWidth < 1024); // Assuming lg breakpoint is 1024px
+		};
+
+		checkIfMobile();
+		window.addEventListener('resize', checkIfMobile);
+
+		return () => {
+			window.removeEventListener('resize', checkIfMobile);
+		};
+	}, []);
 
 	const changeLanguage = (lng: string) => {
 		i18n.changeLanguage(lng);
@@ -23,6 +37,31 @@ const LanguageSwitch = () => {
 	];
 
 	const currentLang = languages.find((lang) => lang.code === currentLanguage);
+
+	const toggleLanguage = () => {
+		const newLanguage = currentLanguage === 'en' ? 'pt' : 'en';
+		changeLanguage(newLanguage);
+	};
+
+	if (isMobile) {
+		return (
+			<button
+				onClick={toggleLanguage}
+				className='p-0 bg-none border-none cursor-pointer'
+			>
+				<ReactCountryFlag
+					countryCode={currentLang?.flag || 'US'}
+					svg
+					style={{
+						width: '2em',
+						height: '2em',
+						borderRadius: '0.25rem',
+					}}
+					title={currentLang?.name || 'English'}
+				/>
+			</button>
+		);
+	}
 
 	return (
 		<DropdownMenu>

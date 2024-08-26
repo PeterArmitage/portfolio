@@ -46,8 +46,8 @@ const App: React.FC = () => {
 
 	return (
 		<div className='min-h-screen transition-colors duration-300 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 dark:from-gray-700 dark:via-gray-900 dark:to-black text-gray-900 dark:text-gray-100'>
-			<Sidebar theme={theme} />
-			<div className='fixed top-4 right-4 flex space-x-4 z-50 hidden lg:flex'>
+			<Sidebar theme={theme} toggleTheme={toggleTheme} />
+			<div className='fixed top-4 right-4 flex space-x-4 z-50  lg:flex'>
 				<LanguageSwitch />
 				<ThemeSwitch toggleTheme={toggleTheme} theme={theme} />
 			</div>

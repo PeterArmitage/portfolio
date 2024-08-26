@@ -12,7 +12,7 @@ i18n.use(initReactI18next).init({
 				contacts: 'Contacts',
 				home: 'Home',
 				title: 'Peter Armitage',
-				subtitle: 'Data Analyst/Full Stack Developer',
+				subtitle: 'Full Stack Developer',
 				description: 'I build websites and create strategic dashboards.',
 				aboutMeTitle: 'About Me',
 				aboutMeDescription:
@@ -39,7 +39,7 @@ i18n.use(initReactI18next).init({
 				contacts: 'Contatos',
 				home: 'Início',
 				title: 'Peter Armitage',
-				subtitle: 'Analista de Dados/Desenvolvedor Full Stack',
+				subtitle: 'Desenvolvedor Full Stack',
 				description: 'Construo sites e crio dashboards estratégicos.',
 				aboutMeTitle: 'Sobre Mim',
 				aboutMeDescription:
