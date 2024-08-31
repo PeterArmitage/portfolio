@@ -7,7 +7,7 @@ const Skills = () => {
 		<div className='font-montserrat p-4 lg:pl-72 md:pl-16 sm:pl-8'>
 			<div className='hover:bg-purple-300 dark:hover:bg-gray-700 transition-colors p-4 rounded'>
 				<h1 className='text-4xl font-bold mb-4 flex items-center'>
-					<FaTools className='mr-2' /> My Skills
+					<FaTools className='mr-2' /> {t('mySkills')}
 				</h1>
 				<p className='text-lg'>
 					{t('skillsIntro')}
