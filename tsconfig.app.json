@@ -29,8 +29,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Fix for testing-library__jest-dom */
-    "types": ["jest", "@testing-library/jest-dom"]
+    "types": ["@testing-library/jest-dom"]
   },
   "include": ["src", "types"]
 }
