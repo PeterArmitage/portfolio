@@ -1,6 +1,6 @@
 import { FaKeyboard, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Food from '../../assets/images/portfolio/Food.png';
-import Finance from '../../assets/images/portfolio/Finance.png'; // Add this import
+import Finance from '../../assets/images/portfolio/Finance.png';
 import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
