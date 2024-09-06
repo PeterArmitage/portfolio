@@ -28,6 +28,11 @@ i18n.use(initReactI18next).init({
 				mySkills: 'My Skills',
 				skillsIntro: 'Here are some of the skills I have acquired:',
 				variousOtherTools: 'Various other tools.',
+				financeTrackerTitle: 'Personal Finance Tracker',
+				financeTrackerScreenshot: 'Finance Tracker Screenshot',
+				financeTrackerDescription:
+					'A comprehensive personal finance tracking app that helps you manage your income, expenses, and savings. Features include budget planning, expense categorization, and visual reports to help you achieve your financial goals.',
+				liveSite: 'Live Site',
 			},
 		},
 		pt: {
@@ -55,6 +60,11 @@ i18n.use(initReactI18next).init({
 				mySkills: 'Minhas Habilidades',
 				skillsIntro: 'Aqui estão algumas das habilidades que adquiri:',
 				variousOtherTools: 'Várias outras ferramentas.',
+				financeTrackerTitle: 'Rastreador de Finanças Pessoais',
+				financeTrackerScreenshot: 'Captura de Tela do Rastreador de Finanças',
+				financeTrackerDescription:
+					'Um aplicativo abrangente de rastreamento de finanças pessoais que ajuda você a gerenciar sua renda, despesas e economias. Os recursos incluem planejamento de orçamento, categorização de despesas e relatórios visuais para ajudá-lo a alcançar seus objetivos financeiros.',
+				liveSite: 'Site ao Vivo',
 			},
 		},
 	},
