@@ -11,19 +11,20 @@ const Projects = () => {
 				<h1 className='text-4xl font-bold mb-4 flex items-center'>
 					<FaKeyboard className='mr-2' /> {t('myProjects')}
 				</h1>
-				<div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-					<div className='purple-300 dark:bg-gray-900 p-6 rounded-lg shadow-md'>
+				<div className='flex flex-wrap gap-8 justify-center'>
+					{/* Project 1 */}
+					<div className='bg-purple-300 dark:bg-gray-900 p-6 rounded-lg shadow-md flex flex-col w-full max-w-sm'>
 						<h2 className='text-2xl font-bold mb-4'>Fit Forge</h2>
-						<div className='mb-4'>
-							<img
-								src={Food}
-								alt={t('fitnessDashboardScreenshot')}
-								className='rounded-lg w-full h-auto'
-								loading='lazy'
-							/>
-						</div>
-						<p className='text-lg mb-4'>{t('fitForgeDescription')}</p>
-						<div className='flex space-x-4'>
+						<img
+							src={Food}
+							alt={t('fitnessDashboardScreenshot')}
+							className='rounded-lg w-full h-48 object-cover mb-4'
+							loading='lazy'
+						/>
+						<p className='text-sm mb-4 flex-grow overflow-auto'>
+							{t('fitForgeDescription')}
+						</p>
+						<div className='flex space-x-4 mt-auto'>
 							<a
 								href='https://github.com/PeterArmitage/FitnessApp'
 								target='_blank'
@@ -42,20 +43,21 @@ const Projects = () => {
 							</a>
 						</div>
 					</div>
-					<div className='purple-300 dark:bg-gray-900 p-6 rounded-lg shadow-md'>
+					{/* Project 2 */}
+					<div className='bg-purple-300 dark:bg-gray-900 p-6 rounded-lg shadow-md flex flex-col w-full max-w-sm'>
 						<h2 className='text-2xl font-bold mb-4'>
 							{t('financeTrackerTitle')}
 						</h2>
-						<div className='mb-4'>
-							<img
-								src={Finance}
-								alt={t('financeTrackerScreenshot')}
-								className='rounded-lg w-full h-auto'
-								loading='lazy'
-							/>
-						</div>
-						<p className='text-lg mb-4'>{t('financeTrackerDescription')}</p>
-						<div className='flex space-x-4'>
+						<img
+							src={Finance}
+							alt={t('financeTrackerScreenshot')}
+							className='rounded-lg w-full h-48 object-cover mb-4'
+							loading='lazy'
+						/>
+						<p className='text-sm mb-4 flex-grow overflow-auto'>
+							{t('financeTrackerDescription')}
+						</p>
+						<div className='flex space-x-4 mt-auto'>
 							<a
 								href='https://github.com/PeterArmitage/personal-finance'
 								target='_blank'
@@ -74,6 +76,7 @@ const Projects = () => {
 							</a>
 						</div>
 					</div>
+					{/* Add more project divs as needed */}
 				</div>
 			</div>
 		</div>
